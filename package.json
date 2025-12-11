@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "websockets": "npx @soketi/echo-server start --port=6001 --dev"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
@@ -13,5 +14,8 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "@soketi/echo-server": "^5.4.0"
     }
 }
