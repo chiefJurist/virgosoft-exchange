@@ -25,11 +25,6 @@
                 </p>
             </div>
         </div>
-
-        <div class="text-center text-gray-400">
-            <p>Order placement & orderbook coming in next step</p>
-            <p class="mt-4">Real-time updates already working!</p>
-        </div>
     </div>
 </template>
 

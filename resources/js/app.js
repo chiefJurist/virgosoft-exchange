@@ -11,13 +11,21 @@ window.Pusher = Pusher
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: import.meta.env.VITE_PUSHER_APP_KEY,
+    key: 'local',
     wsHost: '127.0.0.1',
     wsPort: 6001,
+    wssPort: 6001,
     forceTLS: false,
     disableStats: true,
-    enabledTransports: ['ws']
-})
+    enabledTransports: ['ws'],
+    cluster: 'mt1',
+    authEndpoint: '/broadcasting/auth',
+    auth: {
+        headers: {
+            Authorization: 'Bearer ' + (localStorage.getItem('token') || '')
+        }
+    }
+});
 
 createApp(App)
     .use(createPinia())
