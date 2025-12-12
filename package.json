@@ -7,17 +7,23 @@
         "websockets": "npx @soketi/echo-server start --port=6001 --dev"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.20",
-        "axios": "^1.7.4",
+        "@tailwindcss/postcss": "^4.1.18",
+        "@tailwindcss/postcss7-compat": "^2.2.17",
+        "@vitejs/plugin-vue": "^6.0.2",
+        "autoprefixer": "^10.4.0",
+        "axios": "^1.13.2",
         "concurrently": "^9.0.1",
         "laravel-echo": "^2.2.6",
         "laravel-vite-plugin": "^1.2.0",
-        "postcss": "^8.4.47",
+        "postcss": "^8.4.0",
         "pusher-js": "^8.4.0",
-        "tailwindcss": "^3.4.13",
+        "tailwindcss": "^3.4.0",
         "vite": "^6.0.11"
     },
     "dependencies": {
-        "@soketi/echo-server": "^5.4.0"
+        "@soketi/echo-server": "^5.4.0",
+        "pinia": "^3.0.4",
+        "vue": "^3.5.25",
+        "vue-router": "^4.6.4"
     }
 }
